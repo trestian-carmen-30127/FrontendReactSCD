@@ -1,38 +1,74 @@
-.App {
+.nav-container {
+  width: 100%;
+  background-color: darkgrey;
+}
+
+.nav-title {
+  font-size: 24px;
+  padding: 2%;
+  font-weight: bold;
+}
+
+.table-employees {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+
+.th-container {
+  display: flex;
+  margin: 10px;
+}
+
+.th-container>div {
+  width: 20%;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid black;
+}
+
+.tb-content {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+}
+
+.tb-row {
+  display: flex;
+  margin: 5px;
+}
+
+.tb-row>div {
+  width: 20%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.employee-add {
+  border: 1px solid black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.add-form {
+  padding: 1%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.App-link {
-  color: #61dafb;
+.add-form>input {
+  height: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.add-form>* {
+  margin: 1%;
+}
+
+.add-form>button {
+  width: 25%;
+  margin: auto;
 }
